@@ -8,4 +8,4 @@ To check the final result of the project, you need to:
 Ctrl + Shift + P
 Pug Start Compiler
 ```
-[learn more](https://www.youtube.com/watch?v=HHBRbyTTSjk&t=179s)
+[learn more](https://www.youtube.com/watch?v=HHBRbyTTSjk&t=179s) about the launch
