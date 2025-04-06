@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Сайт на Pug
+        link(rel="stylesheet", href="../css/style.css")
+    body 
+        - var games = [ { name: 'PUBG Mobile', releaseDATE: 'March 19, 2018', image: '../images/PUBG_Mobile.jpg' }, { name: 'Half-Life 2', releaseDATE: 'November 16, 2004', image: '../images/HALF-LIFE-2.jpg' }, { name: 'Hades', releaseDATE: '2018', image: '../images/Hades.jpg' }, { name: 'The Elder Scrolls V: Skyrim', releaseDATE: 'November 11, 2011', image: '../images/SKYRIM.jpg' }, { name: 'DOOM', releaseDATE: 'May 13, 2016', image: '../images/DOOM.jpg' }, { name: 'Cyberpunk 2077', releaseDATE: 'December 10, 2020', image: '../images/Cyberpunk_2077.jpg' }, { name: 'Standoff 2', releaseDATE: 'December 12, 2017', image: '../images/Standoff_2.jpg' }]
+        div.container
+        h1.title Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dignissimos.
+        p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, perspiciatis fugit! Asperiores quae alias ea iusto ab est assumenda impedit non repellat, adipisci, soluta enim optio ratione deleniti. Ducimus, error.
+        ul.grid
+            each game in games
+                li.grid__item
+                    article.card
+                        a.card__image(href='')
+                            img(src=game.image, alt='')
+                        h2.card__title
+                            a(href='')= game.name 
+                        span.card__date= game.releaseDATE
